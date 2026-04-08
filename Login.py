@@ -1,8 +1,10 @@
-    # def stats(self):
-    #     total = len(self.tasks)
-    #     done = len([t for t in self.tasks if t.completed])
-    #     pending = total - done
-    #     print("\n--- Task Statistics ---")
-    #     print("Total Tasks:", total)
-    #     print("Completed:", done)
-    #     print("Pending:", pending)
+def login(self):
+        print("\n--- Login ---")
+        username = input("Username: ")
+        password = input("Password: ")
+        if username == "admin" and password == "password":
+            print("Login successful!")
+            return True
+        else:
+            print("Invalid credentials. Please try again.")
+            return False   
